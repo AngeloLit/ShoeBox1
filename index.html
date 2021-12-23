@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Shoe Box</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/float.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="shoebox/logo.png" width="90" height="100" alt=""/></a>
+					 </div>
+				 <div class="header-left">
+					 	<div class="menu">
+						  	<a class="toggleMenu" href="#"><img src="shoebox/nav.png" alt="" /></a>
+						  	  <ul class="nav" id="nav">
+						    		<li><a href="product.html">Product</a></li>
+						    		<li><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="cart.html">Cart</a></li>										
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    		</div>							
+	    		   		 <div class="clear"></div>
+	       				</div>
+				   </div>
+	      			</div>
+		 	</div>
+	    	</div>
+	</div>
+	   <div class="content-bottom">
+		<div class="container">
+			<div class="row content_bottom-text">
+			  <div class="col-md-8">
+				<h3 style="color:black">GOOD SHOES,<br>TAKES YOU GOOD PLACES</h3>
+			  </div>
+			</div>
+		</div>
+	</div>
+	  <div class="main">
+		<div class="content-top">
+			<h2>SHOEBOX</h2>
+			<p>Take a sneak</p>
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="shoebox/shoe1.jpg" /></li>
+				<li><img src="shoebox/shoe2.jpg" /></li>
+				<li><img src="shoebox/shoe3.jpg" /></li>
+				<li><img src="shoebox/shoe4.jpg" /></li>
+				<li><img src="shoebox/shoe5.jpg" /></li>
+				<li><img src="shoebox/shoe6.jpg" /></li>
+				<li><img src="shoebox/shoe7.jpg" /></li>
+				<li><img src="shoebox/shoe8.jpg" /></li>
+				<li><img src="shoebox/shoe9.jpg" /></li>
+			</ul>
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+		<div class="body">
+			<div class="container">
+				<div class="row">
+					<video width="100%" height="500px" autoplay muted>
+					<source src="vid.mp4" type="video/mp4">
+					</video>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+			<div class="container">
+				<div class="row">
+					<p style="font-size:250%;text-align:center;color:black;font-family:algerian;"><b>FEATURED POST</b></p><br>
+					<div class="row">
+  						<div class="column">
+   							 <img src="images/shoe11.gif" alt="shoe11" style="width:100%">
+  						</div>
+  						<div class="column">
+ 						         <img src="images/shoe22.gif" alt="shoe22" style="width:100%">
+						</div>
+ 					 	<div class="column">
+    							 <img src="images/shoe33.gif" alt="shoe33" style="width:100%">
+  						</div>
+					</div>
+   				</div>
+   				</div>
+   			</div>
+			</div>
+		</div>
+		<div class="footer">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 	<div class="menu">
+						  	<a class="toggleMenu" href="#"><img src="shoebox/nav.png" alt="" /></a>
+						  	  <ul class="nav" id="nav">
+    							<li><a href="https://www.facebook.com/Shoebox832-103042282234937/"><img src="images/fb-icon.png"></a></li>
+    							<li><a href="#"><img src="images/in-icon.png"></a></li>
+    							<li><a href="#"><img src="images/google-icon.png"></a></li>									
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    		</div>							
+	    		   		 <div class="clear"></div>
+	 
+				   </div>
+	      			</div>
+		 	</div>
+	    	</div>
+		</div>
+</body>	
+</html>
